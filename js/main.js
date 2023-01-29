@@ -301,6 +301,17 @@ function agregarAlCarrito(e) {
     actualizarNumerito();
 
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+
+    Toastify({
+        text: ` ${productoAgregado.titulo} ha sido agregado con éxito`,
+        duration: 3000, 
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: 'center', // `left`, `center` or `right`
+        backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)",
+      }).showToast();
 }
 
 function actualizarNumerito() {
