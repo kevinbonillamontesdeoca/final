@@ -196,7 +196,7 @@ const productos = [
     {
         id: "splatoon3",
         titulo: "Splatoon 3",
-        imagen: "./img/games/splatoon3.png",
+        imagen: "./img/games/Splatoon3.png",
         categoria: {
             nombre: "Nintendo",
             id: "nintendo"
